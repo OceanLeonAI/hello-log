@@ -59,7 +59,7 @@ public class JULTest {
         logger.setLevel(Level.ALL);
         consoleHandler.setLevel(Level.ALL);
         // 二、输出到日志文件
-        FileHandler fileHandler = new FileHandler("f:/jul.log");
+        FileHandler fileHandler = new FileHandler("F:\\jul.log");
         fileHandler.setFormatter(simpleFormatter);
         logger.addHandler(fileHandler);
         // 2.日志记录输出
