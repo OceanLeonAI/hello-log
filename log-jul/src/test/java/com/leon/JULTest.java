@@ -110,11 +110,16 @@ public class JULTest {
         // 读取自定义配置文件
         InputStream in =
                 JULTest.class.getClassLoader().getResourceAsStream("logging.properties");
+
         // 获取日志管理器对象
         LogManager logManager = LogManager.getLogManager();
+
         // 通过日志管理器加载配置文件
         logManager.readConfiguration(in);
+
+        // 创建日志记录器
         Logger logger = Logger.getLogger("com.leon.JULTest");
+
         logger.severe("severe");
         logger.warning("warning");
         logger.info("info");
@@ -122,6 +127,16 @@ public class JULTest {
         logger.fine("fine");
         logger.finer("finer");
         logger.finest("finest");
+
+        Logger logger2 = Logger.getLogger("test");
+
+        logger2.severe("test severe");
+        logger2.warning("test warning");
+        logger2.info("test info");
+        logger2.config("test config");
+        logger2.fine("test fine");
+        logger2.finer("test finer");
+        logger2.finest("test finest");
     }
 
 
