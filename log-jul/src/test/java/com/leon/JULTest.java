@@ -108,8 +108,7 @@ public class JULTest {
     @Test
     public void testProperties() throws Exception {
         // 读取自定义配置文件
-        InputStream in =
-                JULTest.class.getClassLoader().getResourceAsStream("logging.properties");
+        InputStream in = JULTest.class.getClassLoader().getResourceAsStream("logging.properties");
 
         // 获取日志管理器对象
         LogManager logManager = LogManager.getLogManager();
