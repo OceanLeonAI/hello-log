@@ -10,28 +10,28 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>log-log4j</artifactId>
+    <artifactId>log-jcl</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
-        <log4j.version>1.2.17</log4j.version>
+        <commons-logging.version>1.2</commons-logging.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>log4j</groupId>
-                <artifactId>log4j</artifactId>
-                <version>${log4j.version}</version>
+                <groupId>commons-logging</groupId>
+                <artifactId>commons-logging</artifactId>
+                <version>${commons-logging.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
         <dependency>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
         </dependency>
     </dependencies>
 

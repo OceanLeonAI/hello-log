@@ -12,6 +12,8 @@
     <modules>
         <module>log-jul</module>
         <module>log-log4j</module>
+        <module>log-jcl</module>
+        <module>log-slf4j</module>
     </modules>
 
     <properties>
