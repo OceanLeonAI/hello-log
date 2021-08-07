@@ -36,7 +36,7 @@ public class JULTest {
         logger.severe("severe");
         logger.warning("warning");
         logger.info("info");
-        logger.config("cofnig");
+        logger.config("config");
         logger.fine("fine");
         logger.finer("finer");
         logger.finest("finest");
