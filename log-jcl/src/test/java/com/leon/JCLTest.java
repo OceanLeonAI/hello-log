@@ -15,6 +15,13 @@ import org.junit.Test;
 public class JCLTest {
 
     @Test
+    public void testHelloJCL() throws Exception {
+        // 创建日志对象
+        Log log = LogFactory.getLog(JCLTest.class);
+        log.info("hello jcl");
+    }
+
+    @Test
     public void testQuick() throws Exception {
         // 创建日志对象
         Log log = LogFactory.getLog(JCLTest.class);
