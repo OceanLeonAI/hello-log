@@ -14,8 +14,6 @@ public class LogbackTest {
     @Test
     public void testQuick() throws Exception {
 
-        System.out.println("hello world");
-
         for (int i = 0; i < 10000; i++) {
             // 日志输出
             LOGGER.error("error");
